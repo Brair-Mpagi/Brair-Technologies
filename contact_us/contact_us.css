@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{background-color: #f9f9f9;}
+.contact001 .title h2{
+    text-align: center;
+    font-size: 3.2vw;
+    font-family: poppins;
+    letter-spacing: 0.1vw;
+    position: absolute;
+    color: white;
+    margin: 14vw 14vw;
+}
+
+.contact001 img{
+    width: 80%;
+    height: 20vw;
+    margin-left: 10vw;
+    margin-top: 2vw;
+    border-radius: 20px;
+   
+}
+
+
+/* contact box */
+.contactInfo{
+    border-radius: 20px;
+    background-color: #6A6B6B; ;
+    box-shadow: 0 4px 6px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2vw 4vw;
+    color: white;
+    font-family: poppins;
+    font-weight: 300;
+    font-size:1.2vw;
+    height: 32vw;
+    width: 20vw;
+    position: absolute;
+    z-index: 5;  /* to overlay form*/
+    margin: 5vw 1vw;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+/* heading on contact box */
+.container .contactInfo h2
+{
+    color: #fff;
+    font-size:2vw;
+    font-weight: 500;
+}
+
+.container .contactInfo div ul{list-style: none;}
+.container .contactInfo div ul li {
+    list-style: none;
+    margin: 20px 0;
+    cursor: pointer;
+    /* align-items: flex-start; */
+}
+.container .contactInfo div ul li a{text-decoration: none; color: black;}
+
+.container .contactInfo div ul li span img{
+    width: 2vw;
+}
+
+
+
+/* ul with social icons in contact infor */
+
+.container .contactInfo  .sci
+{
+    display: flex;
+}
+
+.container .contactInfo .sci li
+{
+   list-style: none;  
+   margin-right: 2vw;
+}
+
+.container .contactInfo ul .sci li a
+{
+   text-decoration: none;
+}
+
+.container .contactInfo .sci li a img
+{width: 2vw;
+}
+
+
+/* CONTACT FORM */
+/* contact heading */
+.container .contactForm h2
+{
+    color: #0f3959;
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+}
+/*form  */
+section .contactForm{
+    border-radius: 30px;
+    z-index: 1; /* to be overlayed by contact us*/
+    background-color: white;
+    box-shadow: 0 4px 6px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2vw 10vw;
+    width: 55vw;
+    height: 40vw;
+    margin: 5vw 15vw;
+
+}
+
+/* contact form box */
+.container .contactForm .formBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw 0 5vw 8vw ;
+    height: 15vw;
+}
+
+.container .contactForm .formBox .inputBox_w50
+{
+    width: 20vw;
+}
+
+.container .contactForm .formBox .inputBox_w100
+{
+    width: 100%;
+}
+
+/* input field css */
+.container .contactForm .formBox  input,
+.container .contactForm .formBox textarea 
+{
+    width: 100%;
+    /* resize: none; */
+    padding: 1vw 0.1vw;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    border: none;    /*eliminate boder color*/
+    outline: none;   /*remove outline when typing in input form*/
+    border-bottom: 1px solid #777;
+}
+
+/* text area */
+.container .contactForm .formBox  textarea 
+{
+    height: 5vw;
+}
+.container .contactForm .formBox div{margin-left: 2vw;}
+.container .contactForm .formBox div span 
+{
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 1vw;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.container .contactForm .formBox  input:focus ~ span,
+.container .contactForm .formBox  input:valid ~ span,
+.container .contactForm .formBox  textarea:focus ~ span, 
+.container .contactForm .formBox  textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size:  1.2vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+    font-weight: 500;
+} 
+
+/* Css for the submit button */
+ .container .contactForm .formBox  input[type="submit"]         
+{
+    /* position: relative; */
+    cursor: pointer;
+    background: #0f3959;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    width: 10vw;
+    padding: 12px;
+    margin: 2vw 0 0 10vw;
+
+}
+
+.container .contactForm .formBox input[type="submit"]:hover{
+    background: #212121;
+}  

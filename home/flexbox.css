@@ -1,0 +1,61 @@
+/* ===================================================== */
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section .product a{background-color: #EFEFEF;}
+section .product a:hover{
+  box-shadow: 1px 1px 5px 2px;
+}
+section h2{text-align: center;}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff9f9;
+}
+.product-item {
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+.product-item img {
+  width: 100%;
+  min-height: 10vw;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.team{
+  display: flex;
+  font-size: 1.4vw;
+  font-weight: 400;
+  width: 100%;
+  margin-left: -10rem;
+}
+.team_head{text-align: center; padding: 2vw;}
+.team .img1{
+  display:block;
+  margin-left: 2vw;
+}
+.team .img1 img{
+  width: 20vw;
+  height: 25vw;
+  border-radius: 50%;
+  margin: 0 3vw 2vw 3vw;
+
+}
+
+/* ---------video section ------ */
+section .videosection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

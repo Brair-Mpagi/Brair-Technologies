@@ -1,0 +1,60 @@
+
+
+/* footer start */
+footer{
+    background-color: rgb(219, 210, 210);
+   font-size: 1.2vw;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+   width: 100%;
+}
+
+footer p {
+    font-size: 2vw;
+    font-weight: 900;
+    text-align: center;
+}
+
+footer img{
+    width: 2vw;
+    border-radius: 30%;
+}
+
+.footercontent{
+    padding: 2rem 0rem 2rem 5rem;
+    display: flex;
+    gap: 5vw;
+}
+
+footer h5{
+    text-align: center;
+    padding: 3vw 0 3vw 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+footer img:hover{
+    /* transform: translate(-1rem, -1rem); */
+    transform: scale(1.5); 
+}
+footer .link{
+   padding-left: 45%;
+}
+footer .link:hover{color: brown;}
+.footercontent .Social_links a{text-decoration: none;}
+.footercontent .Social_links a:hover{ color: red; ;}
+
+
+@media screen and (max-width: 320px) {
+    footer p {font-size: 4vw; text-align:left;}
+    footer img{ width: 4vw;}
+    .footercontent{
+        padding: 1rem;
+        gap: 1vw;
+        font-size: 0.4rem;}
+    footer h5{
+        padding: 1vw 0 1vw 0;
+        font-size: 0.5rem; 
+    }
+
+}

@@ -1,0 +1,98 @@
+/* the header */
+.header{
+  font-family: Poppins, sans-serif;
+
+  /* position: fixed; */
+  width: 100%;
+  z-index: 100;
+  /* top: 0; */
+}
+
+/* CSS for the slider container */
+.slider-container {
+  background-color: rgb(5, 5, 85);
+  width: 100%;
+  height: 6vh; /* height of slider */
+  padding-left: 30vw;  /*push items in the header left*/
+}
+
+
+.word1.active {
+  opacity: 1;     /*set first text to be visible*/
+}
+
+
+/* apply to all words */
+.word1, .word2 , .word3{
+ opacity: 0;    /*at start all words hidden  */
+color: white;
+font-size: 1vw;
+animation-delay: 5s;
+animation-duration: 25s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;   
+}
+
+/* apply to selected words */
+.word1{animation-name: slide1;padding-top: 1vw;}
+.word2{animation-name: slide2;margin-top: -0.9vw ;}
+.word3{animation-name: slide3;margin-top: -2.2vw ;}
+
+
+/* Keyframes for changing words */
+/* start opacity 100%, to 0% opacity in the 1st 20% of the animation timeline. */
+@keyframes slide1 {
+  0% { opacity: 1; }
+ 20%{opacity: 0;}
+  100% { opacity: 0; }
+}
+/*start 0% opacity until 45% of the animation timeline.
+ opacity (100%) by 70% of the timeline, to 0% opacity beyond. */
+@keyframes slide2 {
+  0%{opacity: 0;}
+  45% { opacity: 1; }
+  50%{opacity:1;}
+  70%{opacity: 0;}
+  100% { opacity: 0; }
+}
+/*start 0% opacity until 90% of the animation timeline.
+ opacity (100%) by 100% of the timeline, to 0% opacity beyond. */
+@keyframes slide3 {
+  0% { opacity: 0; }
+  70%{opacity: 0;}
+  90%{opacity: 1;}
+  100% { opacity: 1; }
+}
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 900px) {.slider-container {height: 8vh; }
+  .word1, .word2 , .word3{font-size: 1.5vw; position: relative;}
+  .word1{animation-name: slide1;padding:0 0 0 -2rem;left: -3rem;}
+  .word2{animation-name: slide2;top: -0.3rem ;left: -2rem;}
+  .word3{animation-name: slide3;top: -2rem ;left: -3rem;}
+ }
+
+
+@media screen and (max-width: 769px) {
+  .slider-container {height: 8vh; }
+  .word1, .word2 , .word3{font-size: 1.5vw; position: relative;}
+  .word1{animation-name: slide1;padding:0 0 0 -2rem;left: -3rem;}
+  .word2{animation-name: slide2;top: -0.3rem ;left: -2rem;}
+  .word3{animation-name: slide3;top: -2rem ;left: -3rem;}
+}
+
+@media screen and (max-width: 481px) {
+  .slider-container {height: 8vh; }
+  .word1, .word2 , .word3{font-size: 2.5vw;}
+  .word1{animation-name: slide1;padding-top: 0vw;}
+  .word2{animation-name: slide2;margin-top: -0.9vw ;}
+  .word3{animation-name: slide3;margin-top: -2.2vw ;}
+
+}
+  
+@media screen and (max-width: 320px) {
+  .slider-container{height: 8vh; width: 100%; background-color: rgb(156, 156, 180);}
+  .word1, .word2 , .word3{display: none;}
+  header{width: 100%;}
+}

@@ -1,0 +1,289 @@
+.top_container{overflow: hidden;}
+/* nav bar section */
+/* nav 1 */
+.nav1{    
+    height: 5vw;
+    display: flex; 
+    justify-content: space-between;
+    /* position: fixed; */
+    width: 100%;
+    margin-top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+
+/* logo img */
+ .nav1  .logo img{
+    margin-top: -1.5rem;
+    width: 10vw;
+} 
+
+/* ........................ the form start....................... */
+
+/* Style for the container that holds the input field and the search button */
+.search-container {
+    display: flex;
+    margin: 10px auto; 
+}
+
+/* Style for the input field */
+input[type="text"] {
+    padding: 2px;
+    font-size: 16px;
+    border-top-left-radius: 10px; /* Rounded top left corner */
+    border-bottom-left-radius: 10px; /* Rounded bottom left corner */
+    width: 30vw;
+    height: 6vh;
+    border-width: 0.5px;
+    outline: none; /*border highligh on typing*/
+}
+
+/* Style for the search button */
+button {
+    padding: 8px 15px;
+    background-image: linear-gradient(rgb(158, 34, 34),rgb(110, 110, 191));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 5px; /* Rounded top right corner */
+    border-bottom-right-radius: 5px; /* Rounded bottom right corner */
+}
+
+/* Style for the hover effect of the search button */
+button:hover { background-color: #0056b3;}
+
+/* ........................ form end start....................... */
+
+/* ........................ the nav 1  start   text ....................... */
+
+.navtext{
+    padding: 1.5vw ;    /*for text and icon */ 
+    margin-right: 2vw;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.navtext ul{ display: flex;    /*make the text and icon horizontal*/}
+.navtext ul div{ margin-left: 3vw;  /*gap between icon & text to next item */ }
+
+.navtext ul li {
+    list-style: none;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.navtext ul .icontext{
+    display: flex;
+    gap: 0.5vw;  /* gap between icon and float text*/
+    align-items: center;    /*centre item from top*/
+}
+
+/* icons */
+.navtext ul li img{
+    width: 1vw;
+}
+
+.navtext ul a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+/* hover effect */
+.navtext ul .icontext a:hover{
+    /* color: white; */
+    font-style: italic;
+    text-decoration: underline;
+}
+/* ........................ the nav 1   end  text ....................... */
+
+
+
+
+/*......................................... nav2................................................  */
+
+.nav2{
+    font-family: 'Poppins, sans-serif';
+    background-color: #EFEFEF;
+    height: 4vw;
+    padding: 1.2rem 0rem 0 2rem;    /*position content*/
+    display: flex;
+    justify-content: space-between; /*put space between two lists*/
+    width: 100%;
+    z-index: 100;
+    margin-right: 5vw;
+}
+.top_container .nav2 .list2 li a{text-decoration: none;}
+.nav2 ul{width: 100%;}
+
+/* both lists directly */
+.nav2 ul li{
+    list-style: none;
+    display: inline; /* make nav list horizontal*/
+    padding: 20px 15px; 
+    font-size: 1.3vw;
+    font-weight: 900;
+    justify-content: space-between; /*put space between two lists*/
+}
+
+/* hover effect for Laptops */
+.nav2 ul li:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* .............................nav 2 drop downs........................................ */
+
+.nav2_laptop_dropdown{
+    position: absolute ;
+    width: 14%;
+    height: 20rem;
+    background-color: #EFEFEF;
+    color: black;
+    border-radius: 0 0 3% 3%;
+    visibility: hidden; 
+    z-index: 5;    /*make drop down overlay slider*/    
+}
+
+.nav2_laptop_dropdown ul li{display: block;}
+.nav2_laptop_dropdown li a{text-decoration: none;}
+
+
+/* Wrap properties */
+.nav2 .list1 .Laptops:hover .nav2_laptop_dropdown,
+.nav2 .list1 .Phones:hover .nav2_laptop_dropdown ,
+.nav2 .list1 .Gaming:hover .nav2_laptop_dropdown ,
+.nav2 .list1 .Desktops:hover .nav2_laptop_dropdown
+{visibility: visible;
+ padding-left: 2rem; }
+
+/* laptop */
+.nav2 .list1 .Laptops:hover .nav2_laptop_dropdown{margin: 0.5rem 0 0 -1rem ;}
+ /* Phones */
+.nav2 .list1 .Phones:hover .nav2_laptop_dropdown {margin: 0.5rem 0rem 0 5rem ;}
+/* Gaming */
+.nav2 .list1 .Gaming:hover .nav2_laptop_dropdown {margin: 0.5rem 0rem 0 10rem ;}
+/* desktop */
+.nav2 .list1 .Desktops:hover .nav2_laptop_dropdown {margin: 0.5rem 0rem 0 15rem ;}
+
+
+/* account */
+#account {
+    display: none;
+    position: absolute;
+    background-color: #e8e8e8;
+    z-index: 5;
+    width: 15vw;
+    height: 10rem;
+    color: black;
+    border-radius: 0 0 3% 3%; 
+    margin-left: 25vw;
+    margin-top: 0.6rem;
+    overflow: hidden;
+}
+
+#Account:hover #account {display: block;width: 15vw;}
+
+#account ul{
+    list-style-type: none;
+    padding: 0;
+    padding: 1rem;
+    width: 15vw;
+}
+#account li button{
+    border: 1px;
+    border-radius: 5px;
+    height: 2.5vw;
+    width: 8vw;
+    font-weight:600;
+    font-size: 1vw;
+    color: white;
+    cursor: pointer;
+    margin: 0rem 15rem 1rem 1rem;
+}
+#account li button:hover{box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);}
+#account li {display: table-row;margin-top: 2rem;}
+
+#account li a {
+    color: #333;
+    text-decoration: none;
+   
+}
+
+#account li:hover {
+   text-decoration: underline;
+   background-color: #E8E8E8;
+   font-style: italic;
+}
+
+
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 900px) {
+    .nav1 {height: 10vh;}
+    .nav1  .logo img{margin-top: -2rem; width: 20vw;}
+
+    /* nav2 */
+    .nav2 {height: 10vh;}
+    .nav2 .list2 li a{font-size: 1.5vw;}
+    .nav2 .list2 #Account{font-size: 1.5vw;}
+ }
+
+/* ======================================================================== */
+@media screen and (max-width: 769px) {
+    .nav1  .logo img{margin-top: -0.5rem; width: 20vw;}
+    .nav1 {height: 20vh;}
+    .nav1 .navtext .icontext a{font-size: 2vw;} 
+    .nav1 .navtext .icontext{position: relative;top: 3rem; left: -25rem;}
+    .nav1 .navtext .icontext li img{width: 2vw; margin-left: 10vw;}
+    .nav1 .form input{width: 40vw;margin-left: 2vw;}
+
+    /* nav2 */
+    .nav2 .list1{display: none;}
+    .nav2 {height: 20vh;}
+    .nav2 .list2 li a{font-size: 2.5vw;}
+    .nav2 .list2 #Account{font-size: 2.5vw;}
+}
+/* ===================================================================== */
+@media screen  and (min-width: 321px) and (max-width: 481px) {
+    .word1, .word2, .word3{display: none;}
+    .nav1  .logo img{margin-top: -0.5rem; width: 15vw;}
+    .nav1 {height: 18vh;}
+    .nav1 .navtext .icontext a{font-size: 3vw;} 
+    .nav1 .navtext .icontext{position: relative;top: 3rem; left: -20rem;}
+    .nav1 .navtext .icontext li img{width: 2.5vw; margin-left: 1vw;}
+    .nav1 .form input{width: 20vw;margin-left: 2vw;height: 4.5vh;}
+    .nav1 .form button{height: 4.5vh; width: 14vw;}
+
+    /* nav2 */
+     #nav12{height: 20vh;padding-left: 25vw;}
+     #nav12 ul li{display: table-row;}
+    .nav2 .list1{display: none;}
+    .nav2 {height: 20vh;}
+    .nav2 .list2 li a{font-size: 3vw;}
+    .nav2 .list2 #Account{font-size: 3vw;}
+}
+
+/* ============================================================== */
+@media screen and (max-width: 320px) {
+    /* logo */
+    .nav1  .logo img{margin-top: -5rem;margin-left: 5rem; width: 25vw;}
+    .nav1 {height: 15vh;}
+    .nav1 .navtext .icontext a{font-size: 4vw;} 
+    .nav1 .navtext .icontext{position: relative;top: 3rem; left: -20rem;}
+    .nav1 .navtext .icontext li img{width: 3vw; margin-left: 30vw;}
+    .nav1 .form input{width: 40vw;margin-left: -9rem;}
+    .top_container{background-color: white;}
+
+    /* nav2 */
+    #nav12{height: 20vh;padding-left: 35vw;}
+    #nav12 ul li{display: table-row;}
+    .nav2 .list1{display: none;}
+    .nav2 {height: 15vh;}
+    .nav2 .list2 li a{font-size: 4vw;}
+    .nav2 .list2 #Account{font-size: 4.5vw;}
+  }

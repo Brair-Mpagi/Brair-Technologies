@@ -1,0 +1,92 @@
+/* universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+
+
+
+body{
+    background-color:rgb(243, 239, 239);
+}
+
+.videosection{
+    display: flex;
+    margin: 2vw 4vw;
+
+}
+
+.video1 video{
+    width: 50vw;
+    height: 20vw;
+    border-radius: 20px;
+    margin: 2vw;
+
+}
+
+
+.section2img{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* margin: 5vw 5vw; */
+    background-color: #e2dfdf;
+    padding: 5vw 5vw; ;
+
+}
+.section2img img{
+    width: 42vw;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.section2img img:hover{
+    transform: scale(0.9);
+}
+
+
+/* about us content */
+.about_us_flex{
+    display: flex;
+    flex-direction: row;
+    margin: 5vw 15vw;
+    gap: 10vw;
+}
+
+.about_us_flex .mission,.about_us_flex .whoweare{
+     background-color: rgb(233, 233, 233);
+     box-shadow: 0 4px 6px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     padding: 5vw;
+     height: 25vw;
+    }  
+
+.about_us_contact{
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0 4px 6px 0  rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5vw 20vw;
+    height: 15vw;
+    margin: 5vw 20vw;
+
+}
+
+.about_us_contact,.mission,.whoweare  {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.about_us_contact:hover, .mission:hover, .whoweare:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.index_about{   
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    background-color: #f0f0f0; /* Change background color on hover */
+    margin: 4rem 10rem;
+    font-size: 0.8vw;
+    padding: 2rem;
+}
+
+.index_about p{margin:0 2rem 1rem 2rem;}

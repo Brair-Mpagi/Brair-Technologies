@@ -1,0 +1,100 @@
+
+    .slider{
+        width:100%;
+        overflow: hidden;
+        position: relative;
+        height: 63vh;
+        display: flex;
+    }
+    
+    .image-box{
+       
+        display: flex;
+        position: absolute;
+        animation: myslide 15s alternate infinite;
+    }
+
+ 
+    @keyframes myslide{
+        0%{
+            left:0;
+        }
+        20%{
+            left:0%;
+        }
+        24%{
+            left:-1920px;
+        }
+        50%{
+            left:-1920px;
+        }
+        54%{
+            left:calc(-1920*2px);
+        }
+        80%{
+            left:calc(-1920*2px);
+        }
+        84%{
+            left:calc(-1920*3px);
+        }
+        100%{
+            left:calc(-1920*3px);
+        }
+    }
+    
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 900px) { 
+    .slider .image-box img{width: 900px; height: 50vh;}
+        @keyframes myslide{
+            0%{left:0;}
+            20%{ left:0%; }
+            24%{ left:-900px;  }
+            50%{ left:-900px; }
+            54%{ left:calc(-900*2px); }
+            80%{ left:calc(-900*2px); }
+            84%{  left:calc(-900*3px); }
+            100%{  left:calc(-900*3px); } }
+}
+/* ================================================================================= */
+@media screen and (max-width: 769px) {
+    .slider .image-box img{width: 769px; height: 50vh;}
+    @keyframes myslide{
+        0%{left:0;}
+        20%{ left:0%; }
+        24%{ left:-769px;  }
+        50%{ left:-769px; }
+        54%{ left:calc(-769*2px); }
+        80%{ left:calc(-769*2px); }
+        84%{  left:calc(-769*3px); }
+        100%{  left:calc(-769*3px); } }
+    }
+/* ============================================================================ */
+@media screen and (max-width: 481px) {
+    .slider .image-box img{width: 481px; height: 50vh;}
+    @keyframes myslide{
+        0%{left:0;}
+        20%{ left:0%; }
+        24%{ left:-481px;  }
+        50%{ left:-481px; }
+        54%{ left:calc(-481*2px); }
+        80%{ left:calc(-481*2px); }
+        84%{  left:calc(-481*3px); }
+        100%{  left:calc(-481*3px); } }
+    }
+/* ============================================================================ */
+@media screen and (max-width: 320px) {
+    .slider .image-box img{width: 320px; height: 30vh;}
+    @keyframes myslide{
+        0%{left:0;}
+        20%{ left:0%; }
+        24%{ left:-320px;  }
+        50%{ left:-320px; }
+        54%{ left:calc(-320*2px); }
+        80%{ left:calc(-320*2px); }
+        84%{  left:calc(-320*3px); }
+        100%{  left:calc(-320*3px); } }
+ }  
+/* ============================================================================ */
+
+  
