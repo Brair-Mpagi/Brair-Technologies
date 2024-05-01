@@ -1,0 +1,27 @@
+======== B-Tech Website ============
+
+Welcome to the B-Tech website repository! 
+This folder contains the source code for the B-Tech website, an online platform offering a wide range of phones,laptops,gaming devices. 
+
+### Description
+B-Tech is an e-commerce platform dedicated to providing customers with the latest advancements in computing technology. From laptops and smartphones to gaming devices and accessories, we offer a curated selection of premium products coupled with unparalleled customer service.
+
+### How to Use
+To run the website remotely use,
+	https://brair-mpagi.github.io/Brair-Technologies/
+
+To run the website locally, follow these steps:
+	1st method
+		"----most recommended----"
+		open the whole folder as a vs project and run the index file with live server
+
+	2nd method
+		open folder and open the index file with any browser of your choice
+
+
+## Authors
+
+- **B-CodeSpace** - CEO BRAIR DERRICK MPAGI
+
+NAME MPAGI DERRICK BRAIR
+2024/U/MMU/BCS/00101

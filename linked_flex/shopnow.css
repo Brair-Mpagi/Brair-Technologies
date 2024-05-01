@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.shopnow{
+    background-color: rgb(230, 226, 226);
+    margin: 5vw 20vw;
+    height: 35vw;
+    padding: 6vw;
+    border-radius: 5px;
+}
+
+.shopnow h1{text-align: center;
+    font-family: poppins;
+    font-size: 3vw;
+    font-style: italic;
+    margin-bottom: 2vw;
+
+}
+
+.shopnow form{
+    margin: 2vw 5vw;
+    font-size: 1.5vw;
+}
+
+.shopnow form input{
+    width: 25vw;
+    height: 2vw;
+    margin: 2vw;
+    border-width: 0.5px;
+    outline: none; /*border highligh on typing*/
+    border-radius: 5px; /* Rounded  corner */
+
+}
+
+/* Style for the search button */
+.shopnow form button {
+    padding: 1vw 2vw;
+    background-image: linear-gradient(rgb(158, 34, 34),rgb(110, 110, 191));
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded top right corner */
+    margin: 2vw 10vw;
+    
+}
+
+/* Style for the hover effect of the search button */
+.shopnow form button:hover { background-color: #050606;}
